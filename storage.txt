@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="dashboard">
+        <div class="sidebar">
+            <p>Dashboard</p>
+            <nav class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Communities</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header">
+            <div class="topheader">
+                <img src="text-search-variant.svg" height="25">
+                <input class="search">
+                
+                <div class="profile">
+                <img src="bell.svg" height="25">
+                </div>
+
+                <img class="profilepic" src="pfp.jpg"><p>Leonna Xie</p>
+                
+            </div>
+            <div class="bottomheader">
+                <img class="picture" src="pfp.jpg">
+                <p>Hi there, <br>
+                Leonna Xie (@koica)</p>
+                <div class="posting">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="maincontent">
+            <div class="projects">
+                <p>Your Projects</p>
+                <div class="tablets">
+                    <div class="card">
+                        <p class="title">Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                    <div class="card">
+                        <p class="title">Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+stylecss
+
+
+
+body {
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.dashboard div {
+    padding: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.topheader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.bottomheader {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.posting {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    
+}
+
+
+
+.search {
+    justify-content: flex-start;
+    border-radius: 100px;
+    width: 300px;
+    height: 20px;
+}
+
+.profilepic {
+    display: flex;
+    
+}
+
+.profile {
+    display: flex;
+    justify-content: right;
+}
+
+.profilepic {
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 80%;
+}
+
+.picture {
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 80%;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(75, 56, 56);
+    grid-column: 1 / 3;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    display: grid;
+    border: 1px solid black;
+    background-color: rgb(184, 184, 223);
+}
+
+.sidebar ul, .sidebar li {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+
+.menu li {
+    display: grid;    grid-template-columns: 120px;
+    grid-template-rows: 20px 20px;
+}
